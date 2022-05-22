@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индивидуальные задания</title>
+</head>
+<style>
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .button{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #e3e300;
+        color:rgb(0, 0, 0);
+        border: 2px solid #9d9d00;
+    }
+    .button:hover{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #858500;
+        color:rgb(0, 0, 0);
+        border: 2px solid #444400;
+    }
+</style>
+<script>
+    function Start(){
+        vkl.style.display = "none";
+        forma.style.display = "none";
+    }
+    function calcD() {
+        if(_i1.value<_i2.value)
+            alert(_i1.value);
+        if(_i2.value<_i1.value)
+            alert(_i2.value);
+        if(_i2.value==_i1.value)
+            alert("Они равны");
+    }
+    function sayMyName() {
+        let name = "Али";
+        let admin;
+        admin = name;
+        alert(admin);
+    }
+    function oldyAreHere() {
+        var year = prompt('Сколько вам лет?','Введите сюда ваш возраст');
+        var tochno = confirm('Вы уверены, что вам '+year+'?');
+        if(!tochno)
+            oldyAreHere();
+        if(tochno)
+            alert('Принято, выполняющему '+year+' лет');
+    }
+    function Check() {
+        if((_i1.value!="")&&(_i2.value!="")&&(_name.value!="")&&(comm.value!="")){
+            vkl.style.display = "block";
+            setForm.style.display = "none";
+        }
+    }
+    function _сheck() {
+        if((l1.checked)||(l2.checked)||(l3.checked)||(l4.checked)||(l5.checked))
+        if(l6.checked){
+            alert("У вас есть способность прогать и считать)"); 
+            return true;
+        }
+    }
+    function viklCheck(){
+        l1.setAttribute("disabled", "false");
+        l2.setAttribute("disabled", "false");
+        l3.setAttribute("disabled", "false");
+        l4.setAttribute("disabled", "false");
+        l5.setAttribute("disabled", "false");
+        alert("Молодец тебя взяли в ГУЛАГ ╰(▔∀▔)╯\n⣿⣿⣿⣿⣿⣿\n⣿⣿\n⣿⣿⣿⣿\n⣿⣿\n⣿⣿\n⣿⣿");
+        alert("                ⠀⠀⠀ ⣀⣀⣤⠤⠤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⡠⠚⢳⠖⠋⠁⠀⠀⠀⠀⠀⠀⠉⠱⠖⠉⠳⡄⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⡸⠁⠀⠈⣠⠤⣄⡀⠀⠀⠀⣀⣀⡀⠀⢠⠀⠀⠸⡄⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⡇⠀⢀⡜⠀⣤⠀⢱⠤⢤⡎⠁⡀⠈⣦⢼⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠙⠲⡾⠻⣄⣀⡴⠚⠃⠀⢧⡀⠁⣀⠏⠘⠦⢴⡞⠁⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⢠⠎⠀⠀⢀⠉⢧⣀⣀⣠⠇⠉⠉⣅⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⡎⠀⠀⢠⡋⠓⠒⠶⠶⠒⠒⠚⠉⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠰⡇⠀⠀⠀⢱⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⢇⠀⠀⡔⠋⠁⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠀⠀\n⠀⠀⠀⠀⠘⢆⠘⣇⠀⠀⢀⣄⠀⠀⠀⢸⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⡗⠎⠙⠋⠁⠈⠓⠲⠒⠁⠀⠀⠀⠀⠀⣼⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⣼⣷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⣿⣿⣇⠀⠀⠀⠀⠀\n⠀⠀⣀⠴⠊⠙⢿⣿⣿⣿⣷⣶⣶⣶⣶⣿⣿⣿⣿⣿⠟⠋⠈⠳⢄⠀⠀⠀\n⢀⡞⠁⠀⡀⡄⠀⠈⠙⡟⠿⠿⠿⠿⠿⠿⠛⠋⠉⠀⠀⠀⠀⠀⠀⠑⢄⠀⠀");
+        alert("⣿⠉⣿⠉⣿⡏⠹⡏⢹⡏⢹⣿⣿⠉⣿⠉⣿⡟⢋⠛⣿⠉⡟⢉⡏⠹⠏⣹⣿\n⣿⡄⣿⡄⣿⡇⡄⠁⢸⡇⢸⣿⣿⡄⣿⡄⣿⡄⣿⣿⣿⡄⡀⢻⣿⡄⢠⣿⣿\n⣿⣦⣤⣴⣿⣧⣿⣤⣼⣧⣬⣭⣿⣦⣤⣴⣿⣧⣤⣤⣿⣤⣷⣤⣿⣧⣼⣿⣿"); 
+    }
+    function SetForm(){
+        forma.style.display = "block";
+    }
+</script>
+<body onload="Start()">
+    <div id="setForm" onclick="SetForm()">Заполните форму (кликните сюда (-_-))</div>
+    <div id="forma">
+        <h1>Индивидуальное задание №1</h1>
+        <input type="text" size="40" onchange="Check()" id = "_i1">
+        <input type="text" size="40" onchange="Check()" id = "_i2">
+        <input type="submit" class="button" value="Проверить" onclick="calcD()">
+        <h1>Индивидуальное задание №2</h1>
+        <input type="submit" class="button" value="Спросить про имя" onclick="sayMyName()">
+        <h1>Индивидуальное задание №3</h1>
+        <input type="submit" class="button" value="Спросить про возраст" onclick="oldyAreHere()">
+        <h1>Индивидуальное задание №4</h1>
+        <h1>Ваше имя:</h1>
+        <input type="text" size="40" onchange="Check()" id = "_name">
+        <h1>Какие навыки у вас есть?</h1>
+        <p><input type="checkbox" name="a" value="Знание C++" id="l1">Знание C++</p>
+        <p><input type="checkbox" name="a" value="Знание C#" id="l2">Знание C#</p>
+        <p><input type="checkbox" name="a" value="Знание Python" id="l3">Знание Python</p>
+        <p><input type="checkbox" name="a" value="Знание языка РКС" id="l4">Знание языка РКС</p>
+        <p><input type="checkbox" name="a" value="Знание G кода" id="l5">Знание G кода</p>
+        <p><input type="checkbox" name="a" value="Знание арифметики" id="l6" onclick="_сheck()">Знание арифметики</p>
+        <h1>Комментарий</h1>
+        <textarea name="comment" onchange="Check()" cols="40" rows="3" id = "comm"></textarea>
+        <input type="submit" class="button" value="Меня возьмут" onclick="viklCheck()" id="vkl">
+    </div>
+</body>
+</html>

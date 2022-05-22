@@ -1,0 +1,109 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Comfortaa', cursive;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.skills{
+    position: relative;
+    height: 100%;
+    width: 66%;
+    background-color: rgb(140, 255, 201);
+    overflow: auto;
+}
+.info{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(175, 166, 255);
+}
+.image{
+    position: relative;
+    margin: auto;
+    top: 10%;
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+    background-color: rgb(255, 255, 255);
+}
+.name{
+    position: relative;
+    margin: auto;
+    top: 13%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+}
+.rev{
+    position: relative;
+    margin: auto;
+    top: 15%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(133, 39, 97);
+    font-size: 25px;
+    text-align: center;
+}
+a{
+    color: rgb(45, 43, 180);
+    font-size: 15px;
+}
+.skill-block{
+    position: relative;
+    margin-top: 5%;
+    border-radius: 200px;
+    left: 5%;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+.photo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 180px;
+    width: 180px;
+    border-radius: 180px;
+    background-color: rgb(219, 219, 219);
+}
+.text-content{
+    position: relative;
+    height: 200px;
+    left: 20px;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+}
+.work_name{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(170, 170, 170);
+    font-size: 35px;
+    text-align: left;
+    line-height: 2em;
+}
+.work_rev{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(240, 0, 0);
+    font-size: 25px;
+    text-align: left;
+}
+::-webkit-scrollbar { width: 0px; height: 0px;}
